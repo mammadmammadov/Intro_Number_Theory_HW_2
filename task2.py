@@ -23,5 +23,5 @@ while True:
     else:
         print(f"GCD of {a} and {b} is {gcd(a, b)}")
 
-    if input("Do you want to continue? (y/n) ").upper() != "y":
+    if input("Do you want to continue? (y/n) ").upper() != "Y":
         break

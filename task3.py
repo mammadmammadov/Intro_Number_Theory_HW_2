@@ -17,11 +17,15 @@ def three_n_plus_1(n):
     return length
 
 
-n = int(input("Enter the value of n: "))
-print(f"Length L(n) is {three_n_plus_1(n)}.")
-print(f"Terminating value T(n) is 1")
-print("-----------------------------------")
+while True:
+    n = int(input("Enter the value of n: "))
+    print(f"Length L(n) is {three_n_plus_1(n)}.")
+    print(f"Terminating value T(n) is 1")
+    print("-----------------------------------")
+    if input("Do you want to continue? (y/n) ").upper() != "Y":
+        break
 
 for i in range(1, 51):
-    print(f"i = {i}\tL(n) = {three_n_plus_1(i)}\tT(n) = 1"
-          f"\t\t\ti = {i + 50}\tL(n) = {three_n_plus_1(i + 50)}\tT(n) = 1")
+    print(f"i = {i}\tL({i}) = {three_n_plus_1(i)}\tT({i}) = 1"
+          f"\t\t\ti = {i + 50}\tL({i+50}) = {three_n_plus_1(i + 50)}\t"
+          f"T({i+50}) = 1")
